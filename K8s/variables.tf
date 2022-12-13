@@ -13,3 +13,19 @@ variable "tags_env" {
 variable "tags_team" {
   default = "A-Team"
 }
+
+variable "vnet_name" {
+  default = "K8sVNet"
+}
+
+variable "public_ip_name" {
+  default = "K8sPubIp"
+}
+
+variable "load_balancer_fe_name" {
+  default = "K8sLBFE"
+}
+
+variable "load_balancer_be_name" {
+  default = "K8sLBBE"
+}
