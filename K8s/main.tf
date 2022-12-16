@@ -62,7 +62,12 @@ resource "azurerm_public_ip" "k8sip" {
   #####
   # "name": "Visual Studio Enterprise – MPN"
   ##### 
-  domain_name_label   = "tempdomainnamelabel2" #azurerm_resource_group.k8srg.name
+  #  domain_name_label   = "tempdomainnamelabel2" #azurerm_resource_group.k8srg.name
+
+  #####
+  # "name": "Visual Studio Enterprise"
+  ##### 
+  #  domain_name_label = "tempdomainnamelabel" #azurerm_resource_group.k8srg.name
 
   sku = "Standard"
 
