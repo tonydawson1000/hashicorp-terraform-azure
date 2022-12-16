@@ -58,7 +58,11 @@ resource "azurerm_public_ip" "k8sip" {
   resource_group_name = azurerm_resource_group.k8srg.name
   location            = azurerm_resource_group.k8srg.location
   allocation_method   = "Static"
-  domain_name_label   = "tempdomainnamelabel" #azurerm_resource_group.k8srg.name
+
+  #####
+  # "name": "Visual Studio Enterprise – MPN"
+  ##### 
+  domain_name_label   = "tempdomainnamelabel2" #azurerm_resource_group.k8srg.name
 
   sku = "Standard"
 
