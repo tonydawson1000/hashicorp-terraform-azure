@@ -5,7 +5,7 @@ terraform {
     #####
     # "name": "Visual Studio Enterprise – MPN"
     ##### 
-    #    storage_account_name = "tfstatej61osm"
+    storage_account_name = "tfstatej61osm"
 
     #####
     # "name": "Visual Studio Enterprise"
