@@ -10,7 +10,7 @@ resource "random_string" "resource_code" {
 #####
 # Create a Resource Group
 #####
-resource "azurerm_resource_group" "tfstate" {
+resource "azurerm_resource_group" "tfvmsk8s" {
   name     = var.resource_group_name
   location = var.resource_group_location
 
@@ -21,12 +21,12 @@ resource "azurerm_resource_group" "tfstate" {
 }
 
 #####
-# Create a Storage Account for TFState
+# Create a Storage Account for TFVMsK8s
 #####
-resource "azurerm_storage_account" "tfstate" {
+resource "azurerm_storage_account" "tfvmsk8s" {
   name                     = "tfstatevmsk8s${random_string.resource_code.result}"
-  resource_group_name      = azurerm_resource_group.tfstate.name
-  location                 = azurerm_resource_group.tfstate.location
+  resource_group_name      = azurerm_resource_group.tfvmsk8s.name
+  location                 = azurerm_resource_group.tfvmsk8s.location
   account_tier             = "Standard"
   account_replication_type = "LRS"
 
@@ -37,10 +37,10 @@ resource "azurerm_storage_account" "tfstate" {
 }
 
 #####
-# Create a Storage Container for TFState
+# Create a Storage Container for TFVMsK8s
 #####
-resource "azurerm_storage_container" "tfstate" {
+resource "azurerm_storage_container" "tfvmsk8s" {
   name                  = var.storage_container_name
-  storage_account_name  = azurerm_storage_account.tfstate.name
+  storage_account_name  = azurerm_storage_account.tfvmsk8s.name
   container_access_type = "blob"
 }

@@ -14,11 +14,20 @@ variable "tags_team" {
   default = "Team-Terraform"
 }
 
+#####
 # Storage Container for 'terraform-vmsk8s' 'project'
+#####
 variable "storage_container_name" {
   default = "terraform-vmsk8s-tfstate"
 }
 
 variable "storage_container_key" {
   default = "terraform.tfstate"
+}
+
+#####
+# Networking
+#####
+variable "vnet_name" {
+  default = "tfvmsk8svnet"
 }

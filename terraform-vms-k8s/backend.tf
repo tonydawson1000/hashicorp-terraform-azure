@@ -5,7 +5,7 @@ terraform {
     #####
     # "storage_container_name": "Visual Studio Enterprise – MPN"
     #####
-    storage_account_name = "tfstatevmsk8sm8tnv2"
+    storage_account_name = "tfstatevmsk8smup0w4"
 
     #####
     # "storage_container_name": "Visual Studio Enterprise"
