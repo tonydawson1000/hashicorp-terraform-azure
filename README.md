@@ -13,7 +13,10 @@ Repo to store Terraform config for Azure
 ### terraform show - reads and displays details from the state file
 ### terraform state list - shows a list of resources managed
 
-# The Networking Infrastruicture needs 
+## AZ Cli
+### az group list -otable - shows all Resource Groups
+
+# The Networking Infrastructure needs 
 
 ## To Setup a Terraform Project to store state remotlly
 ### 1) Create a providers.tf file
