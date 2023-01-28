@@ -3,14 +3,9 @@ terraform {
     resource_group_name = "TFNetworking"
 
     #####
-    # "storage_container_name": "Visual Studio Enterprise – MPN"
+    # Add the 'storage_account_name' (with the random name) from the output here 
     #####
-    storage_account_name = "tfstatenetworking018cx9"
-
-    #####
-    # "storage_container_name": "Visual Studio Enterprise"
-    ##### 
-    #    storage_account_name = "<TO-DO>"
+    storage_account_name = "tfstatenetworkingtfgysg"
 
     container_name = "terraform-networking-tfstate"
     key            = "terraform.tfstate"

@@ -14,9 +14,7 @@ variable "tags_team" {
   default = "Team-Terraform"
 }
 
-#####
 # Storage Container for 'terraform-networking' 'project'
-#####
 variable "storage_container_name" {
   default = "terraform-networking-tfstate"
 }
