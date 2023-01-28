@@ -14,9 +14,7 @@ variable "tags_team" {
   default = "Team-Terraform"
 }
 
-#####
 # Storage Container for 'terraform-vmsk8s' 'project'
-#####
 variable "storage_container_name" {
   default = "terraform-vmsk8s-tfstate"
 }
@@ -52,13 +50,13 @@ variable "nic_ip_config" {
   default = "tfvmsk8snicipconfig"
 }
 
-variable "data_disk_name" {
-  default = "tfvmsk8sdatadisk"
-}
+# variable "data_disk_name" {
+#   default = "tfvmsk8sdatadisk"
+# }
 
-variable "availability_set_name" {
-  default = "tfvmsk8savailabilityset"
-}
+# variable "availability_set_name" {
+#   default = "tfvmsk8savailabilityset"
+# }
 
 variable "vm_name" {
   default = "vmubuntu"
