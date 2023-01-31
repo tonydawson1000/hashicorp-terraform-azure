@@ -1,5 +1,24 @@
 # hashicorp-terraform-azure
-Repo to store Terraform config for Azure
+Repo to store Terraform config for Azure.
+
+
+# Azure CLI
+
+| Command                   | Description               |
+| -                         | -                         |
+| `az login`                | Login to the Azure Portal |
+| `az group list -otable`   | List all Resource Groups  |
+
+---
+
+# Terraform CLI
+
+| Command                   | Description               |
+| -                         | -                         |
+| `az login`                | Login to the Azure Portal |
+| `az group list -otable`   | List all Resource Groups  |
+
+---
 
 
 ## Resource needed to Create the Azure Storage (Used for Remote State Storage)
@@ -12,9 +31,6 @@ Repo to store Terraform config for Azure
 ## State File
 ### terraform show - reads and displays details from the state file
 ### terraform state list - shows a list of resources managed
-
-## AZ Cli
-### az group list -otable - shows all Resource Groups
 
 # The Networking Infrastructure needs 
 
